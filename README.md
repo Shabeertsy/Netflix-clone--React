@@ -1,3 +1,44 @@
+<!-- urls -->
+
+baseUrl=https://image.tmdb.org/
+APL_KEY=ef1c5ec4cf6ae15f203ba59f0d35bbee;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

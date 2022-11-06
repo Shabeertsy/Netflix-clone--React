@@ -1,0 +1,23 @@
+
+/* banner design css here */
+.banner{
+    width: 100%;
+    height: 70vh;
+}
+.shadow{
+    width: 100%;
+    height: 70vh;
+    background-image:linear-gradient(rgb(0, 0, 0,0),rgb(0, 0, 0,0.7));
+    position:absolute;
+    top: 0;
+}
+.banner-head{
+    color: #fff;
+   margin-left:6em;
+   margin-top: 8em;
+}
+.banner-des{
+    color:#fff;
+    width: 400px;
+    margin-left: 12em;
+}
