@@ -18,7 +18,6 @@ function Banner() {
 
     () => {
       axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((response) => {
-        console.log(response.data.results);
         setBanner(response.data.results);
       })
     }
