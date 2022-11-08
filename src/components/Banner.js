@@ -32,26 +32,30 @@ function Banner() {
         banner.map((obj, index) => {
           if (index == random) {
             return (
-              <div>
-
+<div>
                 <div>
                   <img className='banner' src={imageUrl + `${obj.backdrop_path}`} alt="" />
+                
                 </div>
+
 
                 <div className="shadow">
                   <h1 className='banner-head'>{obj.original_name}</h1>
-                  
+
                   <div className='banner-des'>
                     <p >{obj.overview}</p>
+                    <button className='play-button'>Play</button>
+                    <button className='mylist-button'>Mylist</button>
+                   
                   </div>
 
                 </div>
-              </div>
+                </div>
             )
           }
         })
       }
-     
+
 
     </div>
   )
