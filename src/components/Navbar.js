@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className='navbar-icon'>
-<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_official_logo_icon_168085.png" alt="" />
+<img className='netflix-icon' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="" />
       </div>
       <div >
 <a className='navbar-links-home' href="">Home</a>

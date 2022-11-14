@@ -14,7 +14,7 @@
 
 .banner-head {
     color: #fff;
-    margin-left: 1em;
+    margin-left: 50px;
     margin-top: 5em;
     font-weight: 900;
     font-size: 40px;
@@ -23,17 +23,23 @@
 .banner-des {
     color: #fff;
     width: 400px;
-    margin-left: 2em;
+    margin-left: 50px;
 }
 
 .play-button {
     border: none;
     border-radius: 5px;
     background-color: #fff;
-    margin-left: 0.5em;
+    margin-left: 0.4em;
     width: 80px;
     height: 30px;
     font-weight: 900;
+    margin-top: 20px;
+}
+.play-button:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid;
 }
 .mylist-button{
     margin-left: 10px;
@@ -44,6 +50,11 @@
     border-radius: 5px;
     color: #fff;
     background-color: grey;
+}
+.mylist-button:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid;
 }
 
 /* designing mylist component */
@@ -59,17 +70,22 @@
 }
 
 .list-image {
-    width: 300px;
-    height: 300px;
+    max-height: 300px;
+    height: 250px;
     margin-left: 15px;
 
+}
+.down-list{
+   margin-left: 15px;
+    max-height: 150px;
+
+    margin-bottom: 40px;
 }
 
 .list-title {
     color: white;
     margin-left: 40px;
-    position: absolute;
-    top: 570px;
+    
 }
 
 .list-div::-webkit-scrollbar {

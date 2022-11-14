@@ -1,16 +1,16 @@
 import React from 'react'
-import { imageUrl, baseUrl, API_KEY } from '../constants';
+import { imageUrl } from '../constants';
 import { useEffect, useState } from 'react';
 import axios from '../axios';
 import './component.css'
 
-function MovieList() {
+function MovieList(props) {
   let [list, setList] = useState([])
 
 
   //fething the netflix originals data
   useEffect(() => {
-    axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((response) => {
+    axios.get(props.url).then((response) => {
       setList(response.data.results)
     })
   })
@@ -19,12 +19,12 @@ function MovieList() {
 
   return (
     <div className='row'>
-<h2 className='list-title'>Netflix Originals</h2>
+<h2 className='list-title'>{props.title}</h2>
       <div className='list-div'>
         {
           list.map((obj, index) => {
             return (
-              list ? <img className='list-image' src={imageUrl + `${obj.backdrop_path}`} alt="img" /> : ""
+              list ? <img className={props.isSmall ? 'down-list' : 'list-image'} src={imageUrl + `${obj.backdrop_path}`} alt="img" /> : ""
 
             )
           })
