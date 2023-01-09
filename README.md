@@ -1,7 +1,7 @@
 <!-- urls -->
 
 baseUrl=https://image.tmdb.org/
-APL_KEY=ef1c5ec4cf6ae15f203ba59f0d35bbee;
+
 
 
 
